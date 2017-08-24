@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Finding Friends</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.css'>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/bootstrap-slider.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center"><span class="glyphicon glyphicon-user-add"></span> FriendFinder</h1>
+            <hr>
+            <h2 class="text-center">Find a friend or MORE!</h2>
+            <br>
+        </div>
+        <!-- Main Content -->
+        <div class="container">
+            <h2 class="text-center">Questions about you</h2>
+            <hr>
+            <h3><strong>Profile</strong></h3>
+            <h4>Name</h4>
+            <input type="text" name="" id="name" class="form-control" placeholder="NAME REQUIRED" required="">
+            <h4>Link to Photo Image</h4>
+            <input type="text" name="" id="photo" class="form-control" placeholder="LINK REQUIRED" required="">
+            <hr>
+            <h3><strong>Question 1</strong></h3>
+            <h4>You find it difficult to introduce yourself to other people.</h4>
+            <input class="ex1" id="1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="5" data-slider-step="1" data-slider-value="0" data-slider-ticks="[1,5]" data-slider-ticks-labels='["Strongly Disagree","Strongly Agree"]' />
+            <h3><strong>Question 2</strong></h3>
+            <h4>You rarely do something just out of sheer curiosity.</h4>
+            <input class="ex1" id="2" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="5" data-slider-step="1" data-slider-value="0" data-slider-ticks="[1,5]" data-slider-ticks-labels='["Strongly Disagree","Strongly Agree"]' />
+            <h3><strong>Question 3</strong></h3>
+            <h4>Your dreams tend to focus on the real world and its events.</h4>
+            <input class="ex1" id="3" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="5" data-slider-step="1" data-slider-value="0" data-slider-ticks="[1,5]" data-slider-ticks-labels='["Strongly Disagree","Strongly Agree"]' />
+            <h3><strong>Question 4</strong></h3>
+            <h4>You enjoy going to social events that involve dress-up or role-play activities.</h4>
+            <input class="ex1" id="4" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="5" data-slider-step="1" data-slider-value="0" data-slider-ticks="[1,5]" data-slider-ticks-labels='["Strongly Disagree","Strongly Agree"]' />
+            <h3><strong>Question 5</strong></h3>
+            <h4>f your friend is sad about something, you are more likely to offer emotional support than suggest ways to deal with the problem.</h4>
+            <input class="ex1" id="5" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="5" data-slider-step="1" data-slider-value="0" data-slider-ticks="[1,5]" data-slider-ticks-labels='["Strongly Disagree","Strongly Agree"]' />
+            <h3><strong>Question 6</strong></h3>
+            <h4>You often find yourself lost in thought when you are walking in nature.</h4>
+            <input class="ex1" id="6" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="5" data-slider-step="1" data-slider-value="0" data-slider-ticks="[1,5]" data-slider-ticks-labels='["Strongly Disagree","Strongly Agree"]' />
+            <h3><strong>Question 7</strong></h3>
+            <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+            <input class="ex1" id="7" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="5" data-slider-step="1" data-slider-value="0" data-slider-ticks="[1,5]" data-slider-ticks-labels='["Strongly Disagree","Strongly Agree"]' />
+            <h3><strong>Question 8</strong></h3>
+            <h4>Your travel plans are usually well thought out.</h4>
+            <input class="ex1" id="8" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="5" data-slider-step="1" data-slider-value="0" data-slider-ticks="[1,5]" data-slider-ticks-labels='["Strongly Disagree","Strongly Agree"]' />
+            <h3><strong>Question 9</strong></h3>
+            <h4>Winning a debate matters less to you than making sure no one gets upset.</h4>
+            <input class="ex1" id="9" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="5" data-slider-step="1" data-slider-value="0" data-slider-ticks="[1,5]" data-slider-ticks-labels='["Strongly Disagree","Strongly Agree"]' />
+            <h3><strong>Question 10</strong></h3>
+            <h4>Being organized is more important to you.</h4>
+            <input class="ex1" id="10" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="5" data-slider-step="1" data-slider-value="0" data-slider-ticks="[1,5]" data-slider-ticks-labels='["Strongly Disagree","Strongly Agree"]' />
+            <br>
+            <br>
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" class="fa fa-check-circle" aria-hidden="true">
+                </i>Submit</button>
+            <footer class="footer">
+                <div class="container">
+                    <p><a href="/api/friends">API Table Link</a> | <a href="https://github.com/tmurphy86/FriendFinder">GitHub Repo</a></p>
+                </div>
+            </footer>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title" id="modalLabel">New Best Friend</h1>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h2>Name of your new BBF:</h2>
+                            <h3 id="matchName"></h3>
+                            <h3> Yeah I wonder what they look like too</h3>
+                            <img id="matchImg" class="img-responsive" src="#">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+    //build sliders
+    const mySlider = $("input.slider").bootstrapSlider();
+
+    $('.ex1').slider({
+        formatter: function(value) {
+            return 'Current value: ' + value;
+        }
+    });
+
+    // Sumbit to run
+    $("#submit").on("click", function() {
+        if ($('#name').val() === '' || $('#photo').val() === '') {
+            alert("Fill out all fields before submitting!");
+        } else {
+            console.log("run insert");
+            post();
+        }
+    });
+
+    function post() {
+        console.log("enter post");
+        var newfriendData = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores: [$("#1").val(), $("#2").val(), $("#3").val(), $("#4").val(), $("#5").val(), $("#6").val(), $("#7").val(), $("#8").val(), $("#9").val(), $("#10").val(), ]
+        }
+        console.log(newfriendData);
+        findFriend(newfriendData);
+
+    }
+
+    function findFriend(newfriendData) {
+
+        // Current URL
+        var url = window.location.origin;
+
+        //Search DB for that special person
+        $.ajax({ url: url + "/api/friends", method: "GET" })
+            .done(function(friendData) {
+                console.log(friendData);
+                var compareArray = [];
+                for (var i = 0; i < friendData.length; i++) {
+                    var compare = friendData[i].scores;
+                    var addedUp = null;
+
+                    for (var z = 0; z < newfriendData.scores.length; z++) {
+                        addedUp += Math.abs(newfriendData.scores[z] - compare[z]);
+                        console.log(addedUp);
+                    }
+                    compareArray.push(addedUp);
+                    console.log(compareArray);
+                }
+                //location in Array of BFF
+                var bestFriend = compareArray.indexOf(Math.min(...compareArray));
+                console.log(bestFriend);
+
+                //Show best friend in Modal
+                $("#myModal").modal('toggle');
+                $("#matchName").text(friendData[bestFriend].name);
+                $('#matchImg').attr("src", friendData[bestFriend].photo);
+
+            });
+
+        //AJAX POST of the new friend
+        $.post(url + "/api/friends", newfriendData, function(friendData) {
+            console.log("posted new person");
+        });
+
+    }
+    </script>
+</body>
+
+</html>

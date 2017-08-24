@@ -1,0 +1,26 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmurphy86/FriendFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmurphy86/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/tmurphy86/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bootstrap-slider": "^9.8.1",
+    "express": "^4.15.4",
+    "require": "^2.4.20"
+  }
+}
